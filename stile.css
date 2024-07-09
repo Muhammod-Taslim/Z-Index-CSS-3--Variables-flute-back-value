@@ -1,0 +1,55 @@
+/*----Z-Index-----
+div {
+    height: 250px;
+    width: 250px;
+
+}
+#div1 {
+    background: black;
+    position: absolute;
+    z-index: 2;
+
+}
+#div2 {
+    background: rgb(248, 8, 8);
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+}
+    ---------------*/
+
+    /*---css-3, Variables & folt back value---*/
+    :root{
+        --primary-color: red ;
+        --secondary-color: blue
+    }
+
+    div {
+        height: 250px;
+        width: 250px;
+    
+    }
+    #div1 {
+        background: black;
+        background: var(--primary-color, black);
+        position: absolute;
+        z-index: 2;
+    
+    }
+    #div2 {
+        background: yellow;
+        background: var(--secondary-color);
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        z-index: 1;
+    }
+    /*---midia quaire--*/
+    @media screen and (max-width: 600px){
+      :root{
+        --primary-color: black;
+        --secondary-color: yellow;
+      } 
+    }
+
